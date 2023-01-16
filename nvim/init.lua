@@ -1,0 +1,2 @@
+require("maxdemaio")
+print("hello")
