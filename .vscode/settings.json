@@ -9,22 +9,14 @@
     "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
     "source.organizeImports": false
   },
-  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.multiCursorModifier": "ctrlCmd", // allow ctrl or cmd to multi-cursor
   "editor.inlineSuggest.enabled": true,
   "editor.guides.bracketPairs": false,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
 
   // Theme
   "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
-  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
-
-  // Extension Configs
-  "prettier.enable": true, // I only use Prettier for manually formatting
-  "prettier.printWidth": 200,
-  "prettier.semi": false,
-  "prettier.singleQuote": false
+  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons"
 }
