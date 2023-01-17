@@ -4,19 +4,28 @@
   "window.nativeTabs": true, // macOS only and allows multiple instances of vs-code across tabs (window->new tab or cmd+shift+n)
   "editor.fontSize": 12,
   "editor.tabSize": 2,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": false,
-    "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
-    "source.organizeImports": false
-  },
   "editor.multiCursorModifier": "ctrlCmd", // allow ctrl or cmd to multi-cursor
-  "editor.inlineSuggest.enabled": true,
-  "editor.guides.bracketPairs": false,
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
 
   // Theme
   "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
-  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons"
+  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
+
+  // Code Formatting
+  // For personal projects, I use Prettier
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 200,
+  "prettier.semi": true,
+  "prettier.singleQuote": true
+
+  // For larger projects, I will get more granular and use ESLint like so:
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll": false,
+  //   "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
+  //   "source.organizeImports": false
+  // },
 }
