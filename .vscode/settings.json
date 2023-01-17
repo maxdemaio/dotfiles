@@ -1,0 +1,11 @@
+{
+  "window.zoomLevel": 2,
+  "editor.codeActionsOnSave": {},
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
+  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons"
+}
