@@ -10,8 +10,8 @@
   },
 
   // Theme
-  "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
-  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "gruvboxMaterial.darkContrast": "hard",
 
   // Code Formatting
   // For personal projects, I use Prettier
