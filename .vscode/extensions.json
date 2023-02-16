@@ -1,6 +1,6 @@
 {
   "recommendations": [
-    // For personal projects, I use Prettier
+    // For manual tweaks, I use Prettier
     "esbenp.prettier-vscode",
     // For code quality, I will get more granular and use ESLint
     "dbaeumer.vscode-eslint",
@@ -9,6 +9,10 @@
     // Live server for local html/css/js
     "ritwickdey.LiveServer",
     // Spell checking
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    // Gitlens
+    "eamodio.gitlens",
+    // Discord
+    "icrawl.discord-vscode",
   ]
 }
