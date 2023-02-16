@@ -2,11 +2,13 @@
   "recommendations": [
     // For personal projects, I use Prettier
     "esbenp.prettier-vscode",
-    // For larger projects, I will get more granular and use ESLint
+    // For code quality, I will get more granular and use ESLint
     "dbaeumer.vscode-eslint",
     // Vim motions
     "vscodevim.vim",
     // Live server for local html/css/js
-    "ritwickdey.LiveServer"
+    "ritwickdey.LiveServer",
+    // Spell checking
+    "streetsidesoftware.code-spell-checker"
   ]
 }

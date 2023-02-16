@@ -9,10 +9,6 @@
     "editor.defaultFormatter": "golang.go"
   },
 
-  // Theme
-  "workbench.colorTheme": "Gruvbox Material Dark",
-  "gruvboxMaterial.darkContrast": "hard",
-
   // Code Formatting
   // For personal projects, I use Prettier
   "editor.formatOnSave": true,
@@ -20,12 +16,17 @@
   "prettier.tabWidth": 2,
   "prettier.printWidth": 200,
   "prettier.semi": true,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "gruvboxMaterial.darkContrast": "hard",
 
-  // For larger projects, I will get more granular and use ESLint like so:
-  // "editor.codeActionsOnSave": {
-  //   "source.fixAll": false,
-  //   "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
-  //   "source.organizeImports": false
-  // },
+  // For code quality, I get more granular and use ESLint like so:
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
+    "source.organizeImports": false
+  },
+
+  // Only spellcheck markdown/plaintext files, add more as needed
+  "cSpell.enabledLanguageIds": ["markdown", "plaintext"]
 }
