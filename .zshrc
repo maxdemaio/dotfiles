@@ -104,6 +104,7 @@ alias .....="cd ../../../.."
 
 # Git shortcuts
 alias gs="git status"
+alias ga="git add"
 alias gc="git commit"
 alias gb="git branch"
 alias gd="git diff"
