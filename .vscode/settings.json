@@ -12,13 +12,10 @@
   "editor.lineNumbers": "interval",
   "editor.renderWhitespace": "boundary",
   "editor.guides.bracketPairs": "active",
-
+  
   // Editor
   "window.nativeTabs": true, // macOS only and allows multiple instances of vs-code across tabs (window->new tab or cmd+shift+n)
   "editor.multiCursorModifier": "ctrlCmd", // allow ctrl or cmd to multi-cursor
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
   "search.exclude": {
@@ -39,6 +36,15 @@
     "**/tmp": true,
     "**/yarn.lock": true
   },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+
+  // I only use Prettier for manually formatting
+  // Switch enable/formatOnSave to enable
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "prettier.printWidth": 200,
 
   // For code quality, I use ESLint like so:
   "editor.codeActionsOnSave": {
@@ -60,15 +66,12 @@
     "json5"
   ],
 
-  // I only use Prettier for manually formatting
-  "prettier.enable": false, 
-  "prettier.printWidth": 200,
-  "prettier.semi": true,
-  "prettier.singleQuote": true,
-
   // I only spell check markdown/plaintext files by default
   // I add more as needed in dev
-  "cSpell.enabledLanguageIds": ["markdown", "plaintext"],
+  "cSpell.enabledLanguageIds": [
+    "markdown",
+    "plaintext"
+  ],
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
 
