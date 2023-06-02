@@ -4,15 +4,12 @@
   "editor.tabSize": 2,
   "window.zoomLevel": 2,
   "workbench.fontAliasing": "antialiased",
-  "workbench.colorTheme": "Gruvbox Material Dark",
-  "gruvboxMaterial.darkContrast": "hard",
-  "gruvboxMaterial.lightContrast": "hard",
-  "workbench.preferredLightColorTheme": "Gruvbox Material Light",
-  "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
-  "editor.lineNumbers": "interval",
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
   "editor.renderWhitespace": "boundary",
   "editor.guides.bracketPairs": "active",
-  
+
   // Editor
   "window.nativeTabs": true, // macOS only and allows multiple instances of vs-code across tabs (window->new tab or cmd+shift+n)
   "editor.multiCursorModifier": "ctrlCmd", // allow ctrl or cmd to multi-cursor
@@ -41,37 +38,24 @@
   },
 
   // I only use Prettier for manually formatting
-  // Switch enable/formatOnSave to enable
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
+  // comment/uncomment as needed
+  "prettier.enable": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.printWidth": 200,
 
   // For code quality, I use ESLint like so:
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
-    "source.fixAll.eslint": true, // this allows ESLint to auto fix on save
+    "source.fixAll.eslint": false, // this allows ESLint to auto fix on save
     "source.organizeImports": false
   },
   "eslint.quiet": true,
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "javascriptreact",
-    "typescriptreact",
-    "vue",
-    "html",
-    "markdown",
-    "json",
-    "jsonc",
-    "json5"
-  ],
+  "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact", "vue", "html", "markdown", "json", "jsonc", "json5"],
 
   // I only spell check markdown/plaintext files by default
   // I add more as needed in dev
-  "cSpell.enabledLanguageIds": [
-    "markdown",
-    "plaintext"
-  ],
+  "cSpell.enabledLanguageIds": ["markdown", "plaintext"],
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en,en-US",
 
@@ -148,5 +132,5 @@
     "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, mdsvex.config.js, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
     "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
     "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
-  },
+  }
 }
