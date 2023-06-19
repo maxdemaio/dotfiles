@@ -2,6 +2,7 @@
   // Visuals
   "editor.fontSize": 12,
   "editor.tabSize": 2,
+  "editor.insertSpaces": true,
   "window.zoomLevel": 2,
   "workbench.fontAliasing": "antialiased",
   "workbench.colorTheme": "GitHub Dark",
@@ -39,19 +40,30 @@
 
   // I only use Prettier for manually formatting
   // comment/uncomment as needed
-  "prettier.enable": true,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.printWidth": 200,
+  // "prettier.enable": true,
+  // "editor.formatOnSave": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // For code quality, I use ESLint like so:
+  // For code linting, I use ESLint
+  // comment/uncomment as needed
   "editor.codeActionsOnSave": {
     "source.fixAll": false,
     "source.fixAll.eslint": false, // this allows ESLint to auto fix on save
     "source.organizeImports": false
   },
   "eslint.quiet": true,
-  "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact", "vue", "html", "markdown", "json", "jsonc", "json5"],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "json5"
+  ],
 
   // I only spell check markdown/plaintext files by default
   // I add more as needed in dev
