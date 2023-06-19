@@ -1,2 +1,0 @@
-require("maxdemaio")
-print("hello")
