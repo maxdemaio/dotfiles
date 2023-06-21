@@ -8,6 +8,7 @@
   "workbench.colorTheme": "GitHub Dark",
   "workbench.preferredLightColorTheme": "GitHub Light",
   "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "workbench.editor.titleScrollbarSizing": "large",
   "editor.renderWhitespace": "boundary",
   "editor.guides.bracketPairs": "active",
 
@@ -40,9 +41,9 @@
 
   // I only use Prettier for manually formatting
   // comment/uncomment as needed
-  // "prettier.enable": true,
-  // "editor.formatOnSave": true,
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.enable": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // For code linting, I use ESLint
   // comment/uncomment as needed
