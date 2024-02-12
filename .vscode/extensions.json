@@ -1,5 +1,7 @@
 {
   "recommendations": [
+    // For Astro language support
+    "astro-build.astro-vscode",
     // For manual tweaks, I use Prettier
     "esbenp.prettier-vscode",
     // For code quality, I will get more granular and use ESLint
@@ -12,7 +14,13 @@
     "streetsidesoftware.code-spell-checker",
     // Gitlens
     "eamodio.gitlens",
-    // Discord
+    // Discord Rich Presence
     "icrawl.discord-vscode",
+    // Iconify intellisense to preview icons
+    "antfu.iconify",
+    // Tailwind CSS intellisense (toggle off in Uno project)
+    "bradlc.vscode-tailwindcss",
+    // UnoCSS intellisense
+    "antfu.unocss",
   ]
 }
