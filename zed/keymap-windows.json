@@ -1,0 +1,111 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "bindings": {
+      "ctrl-p": "pane::ActivateNextItem",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      "shift l l": "workspace::ToggleBottomDock", // match vscode behavior
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      // "j k": "vim::NormalBefore"
+      "ctrl-a": "editor::SelectAll",
+      "space q": "editor::Hover",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "space f f": "file_finder::Toggle",
+      "space g e": "pane::RevealInProjectPanel",
+      "space h": "workspace::ToggleLeftDock",
+      "space j a": "pane::JoinAll",
+      "space c t p": "pane::CloseItemsToTheRight",
+      "space c t n": "pane::CloseItemsToTheLeft",
+      "ctrl-shift-d": "editor::DuplicateLineDown",
+      "space s p": "pane::SplitAndMoveRight",
+      "space s n": "pane::SplitAndMoveLeft",
+      "space f s": "outline::Toggle",
+      "space t r": "editor::ToggleCodeActions",
+      "space t b": "editor::ToggleBreakpoint",
+      "space b h": "workspace::ToggleBottomDock",
+      "space r r": "task::Rerun",
+      "space c t t": "workspace::NewCenterTerminal",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-k": "editor::MoveUp",
+      "ctrl-j": "editor::MoveDown",
+      "space r n": "editor::Rename",
+    },
+  },
+  {
+    "context": "ContextStrip",
+    "bindings": {
+      "ctrl-k": "agent::FocusUp",
+    },
+  },
+  {
+    "context": "(Editor && (showing_code_actions || showing_completions))",
+    "bindings": {
+      "ctrl-k": "editor::ContextMenuPrevious",
+    },
+  },
+  {
+    "context": "(Editor && (showing_code_actions || showing_completions))",
+    "bindings": {
+      "ctrl-j": "editor::ContextMenuNext",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-n": "pane::ActivatePreviousItem",
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "shift-q": "pane::CloseActiveItem", // Don't pass ctrl-w to terminal, let Zed handle it.
+    },
+  },
+  {
+    "context": "Terminal",
+    "unbind": {
+      "ctrl-n": "workspace::NewTerminal",
+    },
+  },
+  {
+    "unbind": {
+      "ctrl-o": "workspace::OpenFiles"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-o": "workspace::Open"
+    }
+  },
+  {
+    "unbind": {
+      "ctrl-k ctrl-o": "workspace::Open"
+    }
+  }
+]
